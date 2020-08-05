@@ -1,0 +1,44 @@
+\documentclass{standalone}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+% %Verifier que la locale est bien: "fr_FR.UTF-8"
+\usepackage[T1]{fontenc}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings,arrows}
+\usetikzlibrary{matrix}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{scope}
+\draw (-1,-1) rectangle (6,5);
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.5 with {\arrow{latex}}}
+    ] 
+    
+    \draw[postaction={decorate}] (0,0)--(5,0);
+    \draw[postaction={decorate}] (5,0)--(5,4);
+    \draw[postaction={decorate}] (0,4)--(5,4);
+    \draw[postaction={decorate}] (0,0)--(0,4);
+
+\end{scope}
+
+    \begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.55 with {\arrow{latex}}}
+    ] 
+    \draw[postaction={decorate}] (5,0)--(5,4);
+    \draw[postaction={decorate}] (0,0)--(0,4);
+
+\end{scope}
+\begin{scope}
+\draw [step=1cm](0,0) grid (5,4);
+\end{scope}
+
+\end{scope}
+
+
+\end{tikzpicture}
+\end{document}

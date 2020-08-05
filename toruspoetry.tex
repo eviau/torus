@@ -1,0 +1,59 @@
+\documentclass{standalone}
+
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+% %Verifier que la locale est bien: "fr_FR.UTF-8"
+\usepackage[T1]{fontenc}
+
+\usepackage{tikz}
+\usetikzlibrary{decorations.markings,arrows}
+\usetikzlibrary{matrix}
+
+\usepackage{varwidth}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{scope}
+\fill [white] (-1,-1) rectangle (10,9);
+\begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.5 with {\arrow{latex}}}
+    ] 
+    
+    \draw[postaction={decorate}] (0,0)--(10,0);
+    \draw[postaction={decorate}] (10,0)--(10,8);
+    \draw[postaction={decorate}] (0,8)--(10,8);
+    \draw[postaction={decorate}] (0,0)--(0,8);
+
+\end{scope}
+
+    \begin{scope}[very thick,decoration={
+    markings,
+    mark=at position 0.55 with {\arrow{latex}}}
+    ] 
+    \draw[postaction={decorate}] (10,0)--(10,8);
+    \draw[postaction={decorate}] (0,0)--(0,8);
+
+\end{scope}
+\begin{scope}
+\draw [step=2cm](0,0) grid (10,8);
+
+\matrix[matrix of nodes,
+             anchor=south west,
+             column sep={2cm,between origins},
+             row sep={2cm,between origins},
+             nodes in empty cells,
+             nodes={minimum size=2cm, font=\tiny, align=left},
+             inner sep=0pt
+            ]
+            {
+au début, & elle se lance & et attrape & \begin{varwidth}{2cm}le soir de mai \end{varwidth}& \begin{varwidth}{1.5cm} tel le premier matin \end{varwidth} &  .\\
+il se vante & ensemble & \begin{varwidth}{1.5cm} la fin de sa pensée \end{varwidth} & s'effiloche  & se redresse \\
+chaque lundi & \begin{varwidth}{1.5cm} une rencontre furtive \end{varwidth} & commence ainsi & le désert & ouvert \\
+\begin{varwidth}{1.5cm} comme \end{varwidth} & \begin{varwidth}{1.5cm} elle, autre, se dit qu'elle devrait\end{varwidth} & saute & debout & et plonge\\};
+
+\end{scope}
+\end{scope}
+
+\end{tikzpicture}
+\end{document}
