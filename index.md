@@ -32,7 +32,7 @@ We can think of techniques that consist in counting the number of syllables on a
 
 There is geometry, as can be found in [calligrams](https://en.wikipedia.org/wiki/Calligram).
 
-There is structure, as we can see on the pages of [Mallarmé](https://fr.wikipedia.org/wiki/Un_coup_de_d%C3%A9s_jamais_n%27abolira_le_hasard#/media/Fichier:Coup_de_d%C3%A9s_premier_%C3%A9tat.jpg)
+There is structure, as we can see on the pages of [Mallarmé](https://fr.wikipedia.org/wiki/Un_coup_de_d%C3%A9s_jamais_n%27abolira_le_hasard#/media/Fichier:Coup_de_d%C3%A9s_premier_%C3%A9tat.jpg).
 
 You might heard of the [Oulipo](https://oulipo.net/), a group of littéraires interested in constrained writing. By looking at the list of proposed [constraints](https://en.wikipedia.org/wiki/Oulipo#Constraints), we will find many that includes mathematical concepts, like the *S+7*: replace every noun by the seventh one following it in the dictionary. Although you might know the Oulipo by having read Italo Calvino, Raymond Queneau or Georges Perec, I would invite you to look at the works of [Michèle Audin](https://en.wikipedia.org/wiki/Mich%C3%A8le_Audin) if you want contemporary mathematicians interested in literature.
 
@@ -42,7 +42,7 @@ Which brings us to to the project at hands: poetry on a torus.
 
 ## Poetry on a torus
 
-Inspired by the idea of finding paths on a surface, I wanted to give another dimension to poetry. I wanted to give this idea of mouvement to written words works. I started with a torus (if you ask me, I am really still at the torus). A donut is a torus: it's a ring.
+Inspired by the idea of finding paths on a surface, I wanted to give another dimension to poetry. I wanted to give this idea of mouvement to written words works. I started with a torus (if you ask me, I am really still at the torus). A donut is a torus: it's a ring. You can read more about this concept [here](http://pi.math.cornell.edu/~mec/Winter2009/Victor/part1.htm), with images.
 
 So what if we wrote on a torus, instead of writing on paper ? Now the good part of this is that you can actually write on a torus by writing on a sheet and identifying the upper bound with the lower one, and the left bound with the right one. If you were to glue these identifications, you would have a torus.
 
