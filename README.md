@@ -1,6 +1,6 @@
 # poetry on a torus
 
-Why not do poetry on a torus ?
+Why not do poetry on a torus ? Complete essay in the `index.md` file.
 
 ## Navigation
 
@@ -26,6 +26,15 @@ Here are some valid poems, based on the torus available in `toruspoetry.pdf`:
 
 You can draw yourself a torus of any size you want... you can also start from the template in the file called `simplegridtorus.pdf`.
 
+I have also included an hexgrid torus in the `hexgridtorus.pdf` file - I am still working on this file at the moment, will post more specific instructions later.
+
+## Generate a new sheet !
+
+I have updated the `simplegridtorus.tex` file to include variables that will let you change the number of rows and columns on the grid simply. They are included at the top of the file, with commented definitions.
+
+-----
+
 Have fun, send me a PR with your best efforts!
 
 Edith
+

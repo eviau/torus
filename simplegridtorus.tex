@@ -1,5 +1,21 @@
 \documentclass{standalone}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% variables
+
+%% grid definition
+% x : number of vertical lines (length of x-axis)
+% y : number of horizontal lines (length of y-axis)
+\newcommand\x{6}
+\newcommand\y{5}
+
+%% blank background definition
+% x : horizontal length of the background.
+% y : vertical length of the background. 
+\newcommand\marginx{7}
+\newcommand\marginy{6}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage[french]{babel}
 \usepackage[utf8]{inputenc}
 % %Verifier que la locale est bien: "fr_FR.UTF-8"
@@ -12,16 +28,16 @@
 \begin{document}
 \begin{tikzpicture}
 \begin{scope}
-\draw (-1,-1) rectangle (6,5);
+\draw (-1,-1) rectangle (\marginx,\marginy);
 \begin{scope}[very thick,decoration={
     markings,
     mark=at position 0.5 with {\arrow{latex}}}
     ] 
     
-    \draw[postaction={decorate}] (0,0)--(5,0);
-    \draw[postaction={decorate}] (5,0)--(5,4);
-    \draw[postaction={decorate}] (0,4)--(5,4);
-    \draw[postaction={decorate}] (0,0)--(0,4);
+    \draw[postaction={decorate}] (0,0)--(\x,0);
+    \draw[postaction={decorate}] (\x,0)--(\x,\y);
+    \draw[postaction={decorate}] (0,\y)--(\x,\y);
+    \draw[postaction={decorate}] (0,0)--(0,\y);
 
 \end{scope}
 
@@ -29,12 +45,12 @@
     markings,
     mark=at position 0.55 with {\arrow{latex}}}
     ] 
-    \draw[postaction={decorate}] (5,0)--(5,4);
-    \draw[postaction={decorate}] (0,0)--(0,4);
+    \draw[postaction={decorate}] (\x,0)--(\x,\y);
+    \draw[postaction={decorate}] (0,0)--(0,\y);
 
 \end{scope}
 \begin{scope}
-\draw [step=1cm](0,0) grid (5,4);
+\draw [step=1cm](0,0) grid (\x,\y);
 \end{scope}
 
 \end{scope}
